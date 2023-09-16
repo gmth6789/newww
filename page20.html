@@ -6,16 +6,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>个人信息</title>
 		<link rel="stylesheet" href="common/vant.min.css" />
-		<script src="common/vue.js"></script>
-		<script src="common/vant.min.js"></script>
-		<script src="common/axios.min.js"></script>
-		<script src="common/Session.js"></script>
-		<script src="common/Tools.js"></script>
-		<script src="common/Validate.js"></script>
-		<script src="common/Page.js"></script>
-		<script src="common/Http.js"></script>
-		<script src="common/index.umd.js"></script>
-		<link rel="stylesheet" href="common/diygw-ui/index.css" />
+		<link rel="stylesheet" href="static/index.css" />
 	</head>
 	<body>
 		<div id="app">
@@ -90,35 +81,7 @@
 			</div>
 		</div>
 	</body>
-	<script type="module">
-		const app = Vue.createApp({
-			data() {
-				return {};
-			},
-			created() {
-				this.init();
-			},
-			methods: {
-				async init() {}
-			}
-		});
-		app.use(vant);
-		app.use(DiygwLib);
-		app.config.globalProperties.$tools = new Tools();
-		app.config.globalProperties.$http = httpService;
-		app.config.globalProperties.$session = Session;
-		app.mixin({
-			methods: {
-				Validate,
-				setData,
-				navigateTo,
-				showModal,
-				showToast,
-				uploadImage
-			}
-		});
-		app.mount('#app');
-	</script>
+	
 	<style>
 		.image1-size {
 			height: 180px !important;
