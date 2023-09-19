@@ -2,50 +2,13 @@
 <html lang="zh-CN" style="--status-bar-height: 0px; --top-window-height: 0px; --window-left: 0px; --window-right: 0px; --window-margin: 0px; --window-top: calc(var(--top-window-height) + calc(44px + env(safe-area-inset-top))); --window-bottom: 0px;"><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>资讯详情</title>
-  <script>
-      var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') || CSS.supports('top: constant(a)'))
-      document.write('<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' + (coverSupport ? ', viewport-fit=cover' : '') + '" />')
-  </script><meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+  <title>Live</title>
+
   <link rel="stylesheet" href="/static/index.css">
-<style type="text/css">@charset "UTF-8";
-/**
-* 这里是uni-app内置的常用样式变量
-*
-* uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
-* 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
-*
-*/
-/**
-* 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
-*
-* 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
-*/
-/* 颜色变量 */
-/* 行为相关颜色 */
-/* 文字基本颜色 */
-/* 背景颜色 */
-/* 边框颜色 */
-/* 尺寸变量 */
-/* 文字尺寸 */
-/* 图片尺寸 */
-/* Border Radius */
-/* 水平间距 */
-/* 垂直间距 */
-/* 透明度 */
-/* 文章场景相关 */
-/*
-ColorUi for uniApp  v2.1.6 | by 文晓港 2019-05-31 10:44:24
-仅供学习交流，如作它用所承受的法律责任一概与作者无关  
-
-*使用ColorUi开发扩展与插件时，请注明基于ColorUi开发 
-
-（QQ交流群：240787041）
-*/
-/* ==================
-  初始化
-==================== */
-body {
+  <link rel="stylesheet" href="/static/main.css">
+  <link rel="stylesheet" href="/static/vant.min.css">
+<style type="text/css">
+.body {
 background-color: #f2f5f9;
 font-size: 14px;
 color: #333333;
@@ -7490,63 +7453,15 @@ background-size: 500% 500%;
             height: calc(100% - 44px - 50px);
             height: calc(100% - 44px - constant(safe-area-inset-top) - 50px - constant(safe-area-inset-bottom));
             height: calc(100% - 44px - env(safe-area-inset-top) - 50px - env(safe-area-inset-bottom));
-          }</style><style type="text/css">@charset "UTF-8";
-/**
-* 这里是uni-app内置的常用样式变量
-*
-* uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
-* 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
-*
-*/
-/**
-* 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
-*
-* 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
-*/
-/* 颜色变量 */
-/* 行为相关颜色 */
-/* 文字基本颜色 */
-/* 背景颜色 */
-/* 边框颜色 */
-/* 尺寸变量 */
-/* 文字尺寸 */
-/* 图片尺寸 */
-/* Border Radius */
-/* 水平间距 */
-/* 垂直间距 */
-/* 透明度 */
-/* 文章场景相关 */
-uni-button[data-v-c454de34]::after {
-border: none;
-background: transparent;
-}
-uni-button[data-v-c454de34] {
-background: transparent;
-}
-.container[data-v-c454de34] {
-background-color: #f2f2f2;
-width: 1115px;
-}
-.solid[data-v-c454de34] {
-border-radius: 25px;
-text-indent: 6px;
-}
-uni-image[data-v-c454de34] {
-width: 1115px;
-}
-.bottomBox[data-v-c454de34] {
-width: 1115px;
-position: fixed;
-left: 0;
-bottom: 0px;
-}
-</style></head>
+}</style>
+</head>
 
 <body class="uni-body pages-news-news">
-  <noscript>
-      <strong>Please enable JavaScript to continue.</strong>
-  </noscript>
-  <uni-app class="uni-app--maxwidth"><uni-page data-page="pages/news/news"><uni-page-head uni-page-head-type="default"><div class="uni-page-head" style="background-color: rgb(248, 248, 248); color: rgb(0, 0, 0);"><div class="uni-page-head-hd"><div class="uni-page-head-btn"><i class="uni-btn-icon" style="color: rgb(0, 0, 0); font-size: 27px;"></i></div><div class="uni-page-head-ft"></div></div><div class="uni-page-head-bd"><div class="uni-page-head__title" style="font-size: 16px; opacity: 1;"><!----> 资讯详情 </div></div><!----><div class="uni-page-head-ft"></div></div><div class="uni-placeholder"></div></uni-page-head><!----><uni-page-wrapper><uni-page-body><uni-view data-v-c454de34="" class="container"><uni-view data-v-c454de34="" style="background-color: rgb(255, 255, 255); padding: 15px;"><uni-view data-v-c454de34="" class="titleBox text-xl text-black text-bold"></uni-view><uni-view data-v-c454de34="" class="timeBox text-df text-gray margin-top-sm margin-bottom-sm"></uni-view><uni-image data-v-c454de34=""><div style="background-image: none; background-size: 100% 100%; background-repeat: no-repeat;"></div><uni-resize-sensor><div><div></div></div><div><div></div></div></uni-resize-sensor></uni-image><uni-view data-v-c454de34="" class="contentBox text-lg text-black margin-top-sm margin-tb-lg"><uni-view data-v-c454de34=""></uni-view></uni-view></uni-view><uni-view data-v-c454de34="" style="background-color: rgb(255, 255, 255); margin: 12px 0px 85px;"><uni-view data-v-c454de34="" class="cu-bar justify-left bg-white"><uni-view data-v-c454de34="" class="action border-title"><uni-text data-v-c454de34="" class="text-lg text-bold text-blue"><span>评论</span></uni-text><uni-text data-v-c454de34="" class="bg-gradual-blue" style="width: 3rem;"><span></span></uni-text></uni-view></uni-view><uni-view data-v-c454de34="" class="cu-list menu-avatar comment solids-top"><uni-view data-v-c454de34="" class="cu-item"><uni-view data-v-c454de34="" class="cu-avatar round" style="background-image: url(&quot;http://1.85.32.5:49000/daxiang/common/20200918181604.png&quot;);"></uni-view><uni-view data-v-c454de34="" class="content"><uni-view data-v-c454de34="" class="text-grey">凯文童鞋</uni-view><uni-view data-v-c454de34="" class="text-gray text-content text-df">速速前来围观吧～</uni-view><uni-view data-v-c454de34="" class="margin-top-sm flex justify-between"><uni-view data-v-c454de34="" class="text-gray text-df">2021.12.05</uni-view></uni-view></uni-view></uni-view></uni-view></uni-view><uni-view data-v-c454de34="" class="bottomBox solids-top"><uni-view data-v-c454de34="" class="cu-bar input"><uni-input data-v-c454de34="" class="solid"><div class="uni-input-wrapper"><div class="uni-input-placeholder input-placeholder" data-v-c454de34="" style="display: none;">说说你的看法..</div><input maxlength="300" step="" enterkeyhint="send" autocomplete="off" type="" class="uni-input-input"><!----></div></uni-input><uni-view data-v-c454de34="" class="action"><uni-view data-v-c454de34="" class="cuIcon-appreciatefill text-grey"><uni-view data-v-c454de34="" class="cu-tag badge" style="top: 3px; right: 14px;">0</uni-view></uni-view></uni-view></uni-view></uni-view><uni-view data-v-c454de34="" class="safe-area-inset-bottom"></uni-view></uni-view></uni-page-body></uni-page-wrapper></uni-page><!----><!----><uni-actionsheet><div class="uni-mask uni-actionsheet__mask" style="display: none;"></div><div class="uni-actionsheet"><div class="uni-actionsheet__menu"><!----><!----><div style="max-height: 260px; overflow: hidden;"><div style="transform: translateY(0px) translateZ(0px);"></div></div></div><div class="uni-actionsheet__action"><div class="uni-actionsheet__cell" style="color: rgb(0, 0, 0);"> Cancel </div></div><div></div></div><!----></uni-actionsheet><uni-modal style="display: none;"><div class="uni-mask"></div><div class="uni-modal"><!----><div class="uni-modal__bd"></div><div class="uni-modal__ft"><div class="uni-modal__btn uni-modal__btn_default" style="color: rgb(0, 0, 0);"> Cancel </div><div class="uni-modal__btn uni-modal__btn_primary" style="color: rgb(0, 122, 255);"> OK </div></div></div><!----></uni-modal><!----><!----></uni-app>
+  <uni-app class="uni-app--maxwidth">
+      <uni-page data-page="pages/news/news">
+        <uni-page-head uni-page-head-type="default">
+            <div class="uni-page-head" style="background-color: rgb(248, 248, 248); color: rgb(0, 0, 0);">
+                <div class="uni-page-head-hd"><div class="uni-page-head-btn"><i class="uni-btn-icon" style="color: rgb(0, 0, 0); font-size: 27px;"></i></div><div class="uni-page-head-ft"></div></div><div class="uni-page-head-bd"><div class="uni-page-head__title" style="font-size: 16px; opacity: 1;"><!----> 资讯详情 </div></div><!----><div class="uni-page-head-ft"></div></div><div class="uni-placeholder"></div></uni-page-head><!----><uni-page-wrapper><uni-page-body><uni-view data-v-c454de34="" class="container"><uni-view data-v-c454de34="" style="background-color: rgb(255, 255, 255); padding: 15px;"><uni-view data-v-c454de34="" class="titleBox text-xl text-black text-bold"></uni-view><uni-view data-v-c454de34="" class="timeBox text-df text-gray margin-top-sm margin-bottom-sm"></uni-view><uni-image data-v-c454de34=""><div style="background-image: none; background-size: 100% 100%; background-repeat: no-repeat;"></div><uni-resize-sensor><div><div></div></div><div><div></div></div></uni-resize-sensor></uni-image><uni-view data-v-c454de34="" class="contentBox text-lg text-black margin-top-sm margin-tb-lg"><uni-view data-v-c454de34=""></uni-view></uni-view></uni-view><uni-view data-v-c454de34="" style="background-color: rgb(255, 255, 255); margin: 12px 0px 85px;"><uni-view data-v-c454de34="" class="cu-bar justify-left bg-white"><uni-view data-v-c454de34="" class="action border-title"><uni-text data-v-c454de34="" class="text-lg text-bold text-blue"><span>评论</span></uni-text><uni-text data-v-c454de34="" class="bg-gradual-blue" style="width: 3rem;"><span></span></uni-text></uni-view></uni-view><uni-view data-v-c454de34="" class="cu-list menu-avatar comment solids-top"><uni-view data-v-c454de34="" class="cu-item"><uni-view data-v-c454de34="" class="cu-avatar round" style="background-image: url(&quot;http://1.85.32.5:49000/daxiang/common/20200918181604.png&quot;);"></uni-view><uni-view data-v-c454de34="" class="content"><uni-view data-v-c454de34="" class="text-grey">凯文童鞋</uni-view><uni-view data-v-c454de34="" class="text-gray text-content text-df">速速前来围观吧～</uni-view><uni-view data-v-c454de34="" class="margin-top-sm flex justify-between"><uni-view data-v-c454de34="" class="text-gray text-df">2021.12.05</uni-view></uni-view></uni-view></uni-view></uni-view></uni-view><uni-view data-v-c454de34="" class="bottomBox solids-top"><uni-view data-v-c454de34="" class="cu-bar input"><uni-input data-v-c454de34="" class="solid"><div class="uni-input-wrapper"><div class="uni-input-placeholder input-placeholder" data-v-c454de34="" style="display: none;">说说你的看法..</div><input maxlength="300" step="" enterkeyhint="send" autocomplete="off" type="" class="uni-input-input"><!----></div></uni-input><uni-view data-v-c454de34="" class="action"><uni-view data-v-c454de34="" class="cuIcon-appreciatefill text-grey"><uni-view data-v-c454de34="" class="cu-tag badge" style="top: 3px; right: 14px;">0</uni-view></uni-view></uni-view></uni-view></uni-view><uni-view data-v-c454de34="" class="safe-area-inset-bottom"></uni-view></uni-view></uni-page-body></uni-page-wrapper></uni-page><!----><!----><uni-actionsheet><div class="uni-mask uni-actionsheet__mask" style="display: none;"></div><div class="uni-actionsheet"><div class="uni-actionsheet__menu"><!----><!----><div style="max-height: 260px; overflow: hidden;"><div style="transform: translateY(0px) translateZ(0px);"></div></div></div><div class="uni-actionsheet__action"><div class="uni-actionsheet__cell" style="color: rgb(0, 0, 0);"> Cancel </div></div><div></div></div><!----></uni-actionsheet><uni-modal style="display: none;"><div class="uni-mask"></div><div class="uni-modal"><!----><div class="uni-modal__bd"></div><div class="uni-modal__ft"><div class="uni-modal__btn uni-modal__btn_default" style="color: rgb(0, 0, 0);"> Cancel </div><div class="uni-modal__btn uni-modal__btn_primary" style="color: rgb(0, 122, 255);"> OK </div></div></div><!----></uni-modal><!----><!----></uni-app>
   <!-- built files will be auto injected -->
 <script type="text/javascript" src="/static/js/chunk-vendors.js"></script><script type="text/javascript" src="/static/js/index.js"></script><div style="position: absolute; left: 0px; top: 0px; width: 0px; height: 0px; z-index: -1; overflow: hidden; visibility: hidden;"><div style="position: absolute; width: 100px; height: 200px; box-sizing: border-box; overflow: hidden; padding-bottom: env(safe-area-inset-top);"><div style="transition: all 0s ease 0s; animation: auto ease 0s 1 normal none running none; width: 400px; height: 400px;"></div></div><div style="position: absolute; width: 100px; height: 200px; box-sizing: border-box; overflow: hidden; padding-bottom: env(safe-area-inset-top);"><div style="transition: all 0s ease 0s; animation: auto ease 0s 1 normal none running none; width: 250%; height: 250%;"></div></div><div style="position: absolute; width: 100px; height: 200px; box-sizing: border-box; overflow: hidden; padding-bottom: env(safe-area-inset-left);"><div style="transition: all 0s ease 0s; animation: auto ease 0s 1 normal none running none; width: 400px; height: 400px;"></div></div><div style="position: absolute; width: 100px; height: 200px; box-sizing: border-box; overflow: hidden; padding-bottom: env(safe-area-inset-left);"><div style="transition: all 0s ease 0s; animation: auto ease 0s 1 normal none running none; width: 250%; height: 250%;"></div></div><div style="position: absolute; width: 100px; height: 200px; box-sizing: border-box; overflow: hidden; padding-bottom: env(safe-area-inset-right);"><div style="transition: all 0s ease 0s; animation: auto ease 0s 1 normal none running none; width: 400px; height: 400px;"></div></div><div style="position: absolute; width: 100px; height: 200px; box-sizing: border-box; overflow: hidden; padding-bottom: env(safe-area-inset-right);"><div style="transition: all 0s ease 0s; animation: auto ease 0s 1 normal none running none; width: 250%; height: 250%;"></div></div><div style="position: absolute; width: 100px; height: 200px; box-sizing: border-box; overflow: hidden; padding-bottom: env(safe-area-inset-bottom);"><div style="transition: all 0s ease 0s; animation: auto ease 0s 1 normal none running none; width: 400px; height: 400px;"></div></div><div style="position: absolute; width: 100px; height: 200px; box-sizing: border-box; overflow: hidden; padding-bottom: env(safe-area-inset-bottom);"><div style="transition: all 0s ease 0s; animation: auto ease 0s 1 normal none running none; width: 250%; height: 250%;"></div></div></div>
 
